@@ -1,29 +1,26 @@
-# 📊 Autonomous Data Analyst Agent CLI
+# Automated Sales Insights & Executive Reporting Pipeline
 
->  **Status: In Active Development (WIP) 🚧**  
-> This project is currently undergoing active development, implementing autonomous agentic architectures (Agentic AI) for enterprise data analytics.
-
----
-
-### 📌 Overview
-An autonomous Command Line Interface (CLI) agent powered by the Google Gemini API. The system automates end-to-end exploratory data analysis (EDA), translates natural language business queries into executable SQL, calculates descriptive statistics, and generates visualization reports directly from the terminal.
+An end-to-end Data Analysis and Generative AI pipeline built in Python. This project automates data cleaning, advanced feature engineering, statistical aggregation, automated executive reporting using Google's **Gemini API**, and professional business data visualizations.
 
 ---
 
-### 🛠️ Tech Stack
-* **Primary Language:** Python
-* **LLM Engine:** Google Gemini API (`gemini-3.6-flash`)
-* **CLI & UI:** Typer, Rich
-* **Data Processing & Analytics:** Pandas, NumPy
-* **Database & Query Layer:** SQLite / SQLAlchemy
+## 🚀 Key Features
+
+* **Data Engineering & Cleaning:** Automated inspection and handling of missing values, duplicate removal, and dataset structuring for 9,994 retail records.
+* **Feature Engineering:** Calculation of derived metrics such as item-level `Cost` and true `Original_Price` before discounts.
+* **Analytical Aggregations:** Multi-level groupings by region and product category to isolate operational inefficiencies and profitability bottlenecks.
+* **Generative AI Executive Reports:** Seamless integration with the `google-genai` SDK (`gemini-3.6-flash`) to transform raw statistical aggregates into clear, professional executive business reports in Hebrew/English.
+* **Automated Data Visualization:** Generation of high-resolution analytical charts (`matplotlib` / `seaborn`) to visually communicate regional profit distribution and loss-making segments.
 
 ---
 
-### 🗺️ Project Milestones & Progress
-- [x] **Project Scaffolding:** Virtual environment setup, dependency management, and environment secrets configuration.
-- [x] **API Connectivity:** Established initial handshake and verified baseline communication with Gemini API.
-- [x] **Dataset Acquisition:** Integrated the benchmark *Sample - Superstore* dataset for development and testing.
-- [ ] **Core Agent Architecture (In Progress):** Implementing the ReAct loop (Reasoning + Action) and tool-calling execution engine.
-- [ ] **SQL Tooling & Schema Inspection:** Automated schema discovery and safe read-only SQL execution.
-- [ ] **Human-in-the-Loop Safeguards:** Destructive operation guards requiring interactive user confirmation.
-- [ ] **Automated Reporting:** Visual chart generation and executive summary report generation.
+## 🛠️ Tech Stack
+
+* **Language:** Python 3.14
+* **Data Manipulation & Analysis:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
+* **AI Integration:** Google GenAI SDK (`google-genai`)
+* **Environment Security:** Python-Dotenv (`.env`)
+
+
+
