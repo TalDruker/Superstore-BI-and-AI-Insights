@@ -113,8 +113,8 @@ The Python script (`main.py`) acts as the core orchestration and automation engi
 ![Executive Summary](https://raw.githubusercontent.com/TalDruker/Superstore-BI-and-AI-Insights/main/asstes/Executive%20Summary.png)
 ---
 ### Deep Dive & Profitability Analysis View
-![Deep Dive](https://raw.githubusercontent.com/TalDruker/Superstore-BI-and-AI-Insights/main/asstes/Deep%20Dive.png)---
-
+![Deep Dive](https://raw.githubusercontent.com/TalDruker/Superstore-BI-and-AI-Insights/main/asstes/Deep%20Dive.png)
+---
 ## 🛠️ Tech Stack & Libraries
 
 * **Database:** Microsoft SQL Server, T-SQL (SSMS)
