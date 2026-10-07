@@ -109,11 +109,10 @@ The Python script (`main.py`) acts as the core orchestration and automation engi
 ## 📸 Dashboard Preview
 
 ### Executive Summary View
-https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/asstes/Executive%20Summary.png
+![Executive Summary](https://raw.githubusercontent.com/TalDruker/Superstore-BI-and-AI-Insights/main/asstes/Executive%20Summary.png)
 
 ### Deep Dive & Profitability Analysis View
-https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/asstes/Deep%20Dive.png
----
+![Deep Dive](https://raw.githubusercontent.com/TalDruker/Superstore-BI-and-AI-Insights/main/asstes/Deep%20Dive.png)---
 
 ## 🛠️ Tech Stack & Libraries
 
