@@ -76,14 +76,15 @@ The Python script (`main.py`) acts as the core orchestration and automation engi
     ```bash
     pip install -r requirements.txt
     ```
-  - **Environment Configuration (`.env`):** Because the secret API key is excluded from GitHub via `.gitignore` for security, you must create a local `.env` file in the root directory and insert your personal key:
+  - **Environment Configuration (`.env`):** Because sensitive credentials and server names are excluded from GitHub via `.gitignore`, create a local `.env` file in the root directory to define your API key and local SQL Server instance:
     ```env
     GEMINI_API_KEY=your_actual_api_key_here
+    DB_SERVER=localhost\SQLEXPRESS
     ```
-  - The script uses `pathlib` to dynamically resolve paths, validates that the API key exists, and initializes the official Google AI client (`genai.Client`).
+  - The script uses `pathlib` to dynamically resolve paths, loads environment variables securely, and initializes the official Google AI client (`genai.Client`).
 
 * **Step 1: Database Integration & ETL Layer**
-  - Establishes a secure connection to the local SQL Server instance using `pyodbc` (`Trusted_Connection=yes`) and pulls the full retail transactions table directly into a high-performance `pandas` DataFrame.
+  - Establishes a secure connection to the SQL Server instance using `pyodbc` and pulls the full retail transactions table directly into a high-performance `pandas` DataFrame.
 
 * **Step 2 & 3: Data Quality & Advanced Feature Engineering**
   - Audits data hygiene by checking duplicate rows (`df.duplicated()`) and missing values (`df.isnull().sum()`).
@@ -96,9 +97,10 @@ The Python script (`main.py`) acts as the core orchestration and automation engi
   - Automatically formats the summary table into text and embeds it into a dynamic prompt. Using the official `google-genai` SDK (`gemini-3.5-flash-lite`), it transmits the data to Google Gemini acting as a **Senior Data Analyst** to generate automated executive business recommendations.
 
 * **How to Run and Test Locally:**
-  Once dependencies are installed and the `.env` key is configured, execute the script in your terminal:
+  Once dependencies are installed and the `.env` file is configured, execute the script in your terminal:
   ```bash
   python main.py
+  ---
   ### 3. The Visualization Layer (Power BI Dashboard)
 * **Executive Summary:** Focuses on high-level macro KPIs (`Total Sales`, `Total Profit`, `Average Discount`) and regional tracking for a fast, top-down snapshot of business health.
 * **Deep Dive Page:** Features dynamic cross-filtering (`Segment` and `Region` slicers), a geographic map with conditional formatting (highlighting profit zones vs. loss zones), and granular city-level breakdown charts.
