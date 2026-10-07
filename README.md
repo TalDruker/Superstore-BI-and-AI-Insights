@@ -122,5 +122,25 @@ The Python script (`main.py`) acts as the core orchestration and automation engi
 * **Core Libraries:** `pandas`, `pyodbc`, `python-dotenv`, `google-genai`
 * **AI Engine:** Google Gemini AI SDK
 * **BI Tool:** Power BI Desktop
+---
+SQL Script
+The advanced T-SQL queries and stored procedures used for data transformation and analysis are available in the repository file:
+
+[SampleSuperstoreQuery.sql
+](https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/SampleSuperstoreQuery.sql)
+---
+Pipeline & ETL Code
+The core logic for database connectivity, data cleaning, feature engineering, and Google Gemini AI integration is available in:
+
+[main.py](https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/main.py)
+
+[requirements.txt](https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/requirements.txt) (for Python dependencies)
+
+---
+
+How to View the Dashbord
+Click [SampleSuperstoreProject.pbix](https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/SampleSuperstoreProject.pbix) to download the Power BI dashboard directly to your computer.
+
+Open the downloaded file using Power BI Desktop to explore the interactive executive reports.
 
 
