@@ -129,10 +129,12 @@ The advanced T-SQL queries and stored procedures used for data transformation an
 
 ---
 
-### Pipeline & ETL Code
-The core logic for database connectivity, data cleaning, feature engineering, and Google Gemini AI integration is available in the repository files:
+### Pipeline & ETL Code & Security
+The core logic for database connectivity, data cleaning, feature engineering, and Google Gemini AI integration, along with configuration and security templates, is available in the repository files:
 * [main.py](https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/main.py)
 * [requirements.txt](https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/requirements.txt) *(required Python dependencies)*
+* [.gitignore](https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/.gitignore) *(repository security rules)*
+* [.envExample](https://github.com/TalDruker/Superstore-BI-and-AI-Insights/blob/main/.envExample) *(environment variables template)*
 
 ---
 
