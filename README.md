@@ -99,27 +99,3 @@ The Python script (`main.py`) acts as the core orchestration and automation engi
   Once dependencies are installed and the `.env` key is configured, execute the script in your terminal:
   ```bash
   python main.py
-
-  ### 3. The Visualization Layer (Power BI Dashboard)
-* **Executive Summary:** Focuses on high-level macro KPIs (`Total Sales`, `Total Profit`, `Average Discount`) and regional tracking for a fast, top-down snapshot of business health.
-* **Deep Dive Page:** Features dynamic cross-filtering (`Segment` and `Region` slicers), a geographic map with conditional formatting (highlighting profit zones vs. loss zones), and granular city-level breakdown charts.
-
----
-
-## 📸 Dashboard Preview
-
-### Executive Summary View
-*(Insert screenshot of your Executive Summary dashboard here)*
-
-### Deep Dive & Profitability Analysis View
-*(Insert screenshot of your Deep Dive dashboard here)*
-
----
-
-## 🛠️ Tech Stack & Libraries
-
-* **Database:** Microsoft SQL Server, T-SQL (SSMS)
-* **Programming Language:** Python 3.x
-* **Core Libraries:** `pandas`, `pyodbc`, `python-dotenv`, `google-genai`
-* **AI Engine:** Google Gemini AI SDK
-* **BI Tool:** Power BI Desktop
